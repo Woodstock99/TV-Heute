@@ -77,7 +77,7 @@ class TT_Listbox(tk.Listbox):
         self.tFenster = tk.Toplevel(self)
         self.tFenster.wm_overrideredirect(True)      # Rahmenloses Fenster
         self.tFenster.wm_geometry(f"+{x+20}+{y}")    # 20 Pixel rechts vom Mauszeiger
-        label = tk.Label(self.tFenster, text=beschreibung, font="Helvetica 11", fg="black", bg="#ffff88",
+        label = tk.Label(self.tFenster, text=beschreibung, font="Helvetica 11", fg="#000000", bg="#FFFF88",
                                         padx=5, pady=5, justify="left", wraplength=350, relief="solid", borderwidth=1)
         label.pack()
 
