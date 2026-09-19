@@ -7,6 +7,8 @@
 from tkinter import *
 import tkinter as tk
 import datetime
+import locale
+locale.setlocale(locale.LC_TIME, "de_DE")
 try:
     import requests
     NO_Requests = False
@@ -189,7 +191,7 @@ else:
     # Info-Liste
     Info_VScroll = tk.Scrollbar(Master, width=14)
     Info_HScroll = tk.Scrollbar(Master, width=14, orient="horizontal")
-    Info_Liste = TT_Listbox(Master, width=60, height=31, selectborderwidth=2, yscrollcommand=Info_VScroll.set, xscrollcommand = Info_HScroll.set)
+    Info_Liste = TT_Listbox(Master, width=54, height=31, selectborderwidth=2, yscrollcommand=Info_VScroll.set, xscrollcommand = Info_HScroll.set)
     Info_Liste.config(foreground=Vordergrund, background=Hintergrund, font="Consolas 10")
     Info_VScroll.config(command=Info_Liste.yview)
     Info_HScroll.config(command=Info_Liste.xview)
