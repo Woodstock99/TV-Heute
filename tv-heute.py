@@ -64,7 +64,7 @@ class TT_Listbox(tk.Listbox):
 
     def Maus_Motion(self, event):
         idx = self.nearest(event.y)
-        if idx >= 0:
+        if idx >= 0 and len(epgDesc) > 0:
             self.Tooltip_Anzeigen(epgDesc[idx], event.x_root, event.y_root)
 
     def Maus_Leave(self, event=None):
@@ -96,9 +96,10 @@ def Info_Anzeigen(event=None):
         #print(URL)
         Info_Liste.delete("0", "end")
         try:
-            xml_dat = requests.get(URL, timeout=10)
+            xml_dat = requests.get(URL, timeout=7)
         except requests.exceptions.Timeout:
-            Info_Liste.insert("end", "  EPG download error: timed out")
+            Info_Liste.insert("end", "  Sorry, der EPG-Server antwortet nicht.")
+            Info_Liste.insert("end", "  Bitte versuche es später noch einmal...")
         else:
             if xml_dat.status_code != 200:
                 Info_Liste.insert("end", "  EPG download error: " + str(xml_dat.status_code))
