@@ -8,7 +8,10 @@ from tkinter import *
 import tkinter as tk
 import datetime
 import locale
-locale.setlocale(locale.LC_TIME, "de_DE")
+try:
+    locale.setlocale(locale.LC_TIME, "de_DE")
+except locale.Error:
+    locale.setlocale(locale.LC_TIME, "de_DE.UTF-8")
 try:
     import requests
     NO_Requests = False
