@@ -7,11 +7,6 @@
 from tkinter import *
 import tkinter as tk
 import datetime
-import locale
-try:
-    locale.setlocale(locale.LC_TIME, "de_DE")
-except locale.Error:
-    locale.setlocale(locale.LC_TIME, "de_DE.UTF-8")
 try:
     import requests
     NO_Requests = False
@@ -22,6 +17,9 @@ except ImportError:
 
 Vordergrund = "#FFFFCC"
 Hintergrund = "#000066"
+
+Wochentag = [" Mo", " Di", " Mi", " Do", " Fr", " Sa", " So"]
+WoTagNr = datetime.datetime.now().weekday()     # weekday() = 0 (Montag) bis 6 (Sonntag)
 
 epgID = []        # EPG-ID
 epgName = []      # Sendername
@@ -183,7 +181,7 @@ else:
     Datum_Buttons = [Datum_But1,Datum_But2,Datum_But3,Datum_But4,Datum_But5,Datum_But6,Datum_But7,]
     for i in range (7):
         datum = datetime.date.today() + datetime.timedelta(days=i-3)
-        Datum_Buttons[i].config(text=datum.strftime(" %a %d.%m."), font="Consolas 9")
+        Datum_Buttons[i].config(text=datum.strftime(Wochentag[(WoTagNr+i-3)%7] + " %d.%m."), font="Consolas 9")
         Datum_Buttons[i].grid(row=1, column=i+2, padx=3, pady=4)
     # Sender-Liste
     Sender_VScroll = tk.Scrollbar(Master, width=14)
