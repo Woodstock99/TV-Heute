@@ -104,6 +104,7 @@ def Info_Anzeigen(event=None):
         else:
             if xml_dat.status_code != 200:
                 Info_Liste.insert("end", "  EPG download error: " + str(xml_dat.status_code))
+                Info_Liste.insert("end", "  Bitte versuche es später noch einmal...")
             else:
                 Info_Liste.delete("0", "end")
                 xml_text = str(xml_dat.text)
