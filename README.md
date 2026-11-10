@@ -1,5 +1,5 @@
 # TV-Heute
-### Das aktuelle Fernsehprogramm für deutschsprachige Sender.
+### Das aktuelle Fernsehprogramm für über 200 deutschsprachige Sender.
 
 ![alt text](https://github.com/Woodstock99/TV-Heute/blob/main/screenshot.png)
 
