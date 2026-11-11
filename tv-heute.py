@@ -221,7 +221,7 @@ else:
 
     Sender_Liste.delete(0, tk.END) 
     for i in range(len(epgName)):
-        Sender_Liste.insert(tk.END, "   " + epgName[i])                 # Sendernamen in Liste
+        Sender_Liste.insert(tk.END, "    " + epgName[i])                 # Sendernamen in Liste
     Sender_Liste.selection_set(0)
     Sender_Liste.activate(0)
     Sender_Liste.see(0)
