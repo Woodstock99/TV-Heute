@@ -62,7 +62,7 @@ epgSender = [
 "212821, Sky Sport Bundesliga", "561726, Sky Sport Bundesliga 1", "559320, Sky Sport Bundesliga 2", "558543, Sky Sport Bundesliga 3", 
 "558272, Sky Sport Bundesliga 4", "477005, Sky Sport Bundesliga 5", "446434, Sky Sport Bundesliga 6", "540526, Sky Sport Bundesliga 7", 
 "499802, Sky Sport Bundesliga 8", "473829, Sky Sport Bundesliga 9", "212817, Sky Sport Bundesliga 10", 
-"562034, Sky Sport Bundesliga UHD", "10781, SKY Sport F1", "10645, Sky Sport Golf", "10785, Sky Sport Mix", "76733, Sky Sport News", 
+"562034, Sky Sport Bundesliga UHD", "10781, Sky Sport F1", "10645, Sky Sport Golf", "10785, Sky Sport Mix", "76733, Sky Sport News", 
 "438445, Sky Sport Premier League", "10634, Sky Sport Tennis", "10675, Sky Sport Top Event", "452124, Sky Sport UHD", 
 "558979, Sport 1 - myTeamTV", "450501, Sport 2 - myTeamTV", "450500, Sport 3 - myTeamTV", "456147, Sport 4 - myTeamTV", 
 "450295, Sport 5 - myTeamTV", "513148, Sport 6 - myTeamTV", "450303, Sport 7 - myTeamTV", "450300, Sport 8 - myTeamTV", 
