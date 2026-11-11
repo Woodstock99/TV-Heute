@@ -28,46 +28,47 @@ epgTitel = []     # Sendung
 epgDesc = []      # Beschreibung
 
 epgSender = [
-"76674, Das Erste", "76627, ZDF", "76740, RTL", "76664, SAT.1", "76762, ProSieben", "438457, RTLZWEI", "76792, kabel eins", 
-"76704, VOX", "76684, WDR", "76748, NDR", "76648, HR", "76730, MDR", "76751, RBB", "76693, SWR", "76712, BR", "76682, 3sat", 
-"76641, ARTE", "76649, PHOENIX", "76718, ZDF info", "76739, ZDF neo", "76738, ONE", "76708, Tele 5", "76787, NITRO",
-"76722, RTLup", "76767, SUPER RTL", "76716, SAT.1 Gold", "76769, SAT.1 emotions", "76702, ProSieben MAXX", "76749, ProSieben Fun",
-"76725, kabel eins CLASSICS", "76715, kabel eins Doku", "76796, VOXup", "76619, Eurosport", "76744, Eurosport 2", "76773, 123.tv", 
-"438460, 13th Street Universal", "76670, 3+", "76685, Adult Channel", "76735, Al Jazeera", "76759, Animal Planet", "76745, ANIXE", 
-"438466, ARD alpha", "76810, ATV", "76638, ATV II", "438446, Auto Motor Sport", "438468, AXN Black", "438454, AXN White", 
-"76650, BBC News", "76771, BBC World News", "76642, Beate-Uhse.TV", "76688, Bergblick", "76794, Bibel TV", "76639, Bloomberg Europe TV", 
-"438469, Bon Gusto", "500397, Cartoonito", "76763, Cartoon Network", "76723, Classica", "76647, CNBC", "76797, CNN International", 
-"76742, COMEDY CENTRAL", "76667, Crime + Investigation", "76646, Curiosity Channel", "76632, DAZN", "451928, DAZN 1", "451927, DAZN 2", 
-"76809, DELUXE MUSIC", "182674, DF1", "76686, Discovery HD", "76786, Disney Channel", "76692, DMAX", "438455, DMF", "379181, DOKUSAT", 
-"438462, euronews", "76690, EXTREME SPORTS", "76775, Fashion TV", "438467, Fix & Foxi", "76800, GEO Television", "76803, GoldStar TV", 
-"76758, Gute Laune TV", "76701, Hamburg 1", "76675, Heimatkanal", "438449, Home & Garden TV", "76661, HSE", "76737, HSE Extra", 
-"76615, Jukebox", "76680, KiKA", "76770, KinoweltTV", "76805, K-TV", "76710, Leipzig Fernsehen", "76713, LUST PUR", 
-"76776, Marco Polo TV", "76765, More than Sports TV", "197537, Motorvision+", "76630, Motorvision TV", "450290, MS Sport", 
-"76780, MTV", "76666, münchen.tv", "76636, N24 Doku", "76628, Nat Geo HD", "76783, NAT GEO WILD", "438439, nick", "76622, Nick Jr.", 
-"76736, Nicktoons", "76694, NOW US", "438444, ntv","100304, oe24.TV", "438442, ORF 1", "76616, ORF 2", "76734, ORF III", 
-"76756, ORF SPORT +", "76660, Playboy TV", "575368, PULS 24", "76732, PULS 4", "76808, PULS acht", "76697, QVC", "76618, QVC2", 
-"76731, RiC", "535469, Rocket Beans TV", "76624, Romance TV", "76700, RTL Crime", "76673, RTL Living", "76804, RTL Passion", 
-"438450, Servus TV Österreich", "76631, Silverline", "76614, sixx", "76781, sonnenklar.TV", "76714, SPIEGEL Geschichte", 
-"76659, SPORT1", "76754, SPORT1+", "450294, SportDigital1+", "438441, sportdigital Fussball", "76784, SRF 1", "76772, SRF zwei", 
-"76658, STAR TV", "76764, Syfy", "76696, tagesschau24","438452, The HISTORY Channel", "76699, TLC", "76789, TOGGO plus", 
-"562036, Top Serien", "568719, tv.berlin", "76726, UHD1", "76662, Universal Channel HD", "76679, Warner TV Comedy", 
-"76645, Warner TV Film", "76806, Warner TV Serie", "76795, WELT","438440, Welt der Wunder TV", "76774, Sky Atlantic HD", 
-"438458, Sky Cinema Action HD", "438459, Sky Cinema Classics HD", "438465, Sky Cinema Family HD", "321554, Sky Cinema Highlights HD", 
-"438461, Sky Cinema Premiere HD", "10908, Sky Crime", "10620, Sky Documentaries", "76663, Sky Krimi", "10640, Sky Nature", 
-"401732, Sky One", "562033, Sky Replay HD", "10918, Sky Showcase", "562035, Sky Showcase HD", "401577, Sky Sport 1", 
-"482486, Sky Sport 2", "456331, Sky Sport 3", "212838, Sky Sport 4", "212824, Sky Sport 5", "480217, Sky Sport 6", "482693, Sky Sport 7", 
-"453384, Sky Sport 8", "478720, Sky Sport 9", "559683, Sky Sport 10", "438448, Sky Sport Austria", "452123, Sky Sport Austria 1 HD", 
-"452126, Sky Sport Austria 2 HD", "452120, Sky Sport Austria 3 HD", "452121, Sky Sport Austria 4 HD", "452122, Sky Sport Austria 5 HD", 
-"452118, Sky Sport Austria 6 HD", "452125, Sky Sport Austria 7 HD", "212821, Sky Sport Bundesliga", "561726, Sky Sport Bundesliga 1", 
-"559320, Sky Sport Bundesliga 2", "558543, Sky Sport Bundesliga 3", "558272, Sky Sport Bundesliga 4", "477005, Sky Sport Bundesliga 5", 
-"446434, Sky Sport Bundesliga 6", "540526, Sky Sport Bundesliga 7", "499802, Sky Sport Bundesliga 8", "473829, Sky Sport Bundesliga 9", 
-"212817, Sky Sport Bundesliga 10", "562034, Sky Sport Bundesliga UHD", "10781, SKY Sport F1", "10645, Sky Sport Golf", 
-"10785, Sky Sport Mix", "76733, Sky Sport News", "438445, Sky Sport Premier League", "10634, Sky Sport Tennis", 
-"10675, Sky Sport Top Event", "452124, Sky Sport UHD", "558979, Sport 1 - myTeamTV", "450501, Sport 2 - myTeamTV", 
-"450500, Sport 3 - myTeamTV", "456147, Sport 4 - myTeamTV", "450295, Sport 5 - myTeamTV", "513148, Sport 6 - myTeamTV", 
-"450303, Sport 7 - myTeamTV", "450300, Sport 8 - myTeamTV", "450502, Sport 9 - myTeamTV", "450302, Sport 10 - myTeamTV", 
-"450306, Sport 11 - myTeamTV", "450299, Sport 12 - myTeamTV", "482487, Sport 13 - myTeamTV", "455988, Sport 14 - myTeamTV", 
-"462760, Sport 15 - myTeamTV", "491421, Sport 16 - myTeamTV", "456554, Sport 17 - myTeamTV", "450292, Sport 18 - myTeamTV" ]
+"76674, Das Erste", "76627, ZDF", "76739, ZDF neo", "76718, ZDF info", "76740, RTL", "438457, RTLZWEI", "76722, RTLup", 
+"76767, SUPER RTL", "76664, SAT.1", "76716, SAT.1 Gold", "76769, SAT.1 emotions", "76762, ProSieben", "76702, ProSieben MAXX", 
+"76749, ProSieben Fun", "76792, kabel eins", "76725, kabel eins CLASSICS", "76715, kabel eins Doku", "76704, VOX", 
+"76796, VOXup", "76787, NITRO", "76708, Tele 5", "76684, WDR", "76748, NDR", "76648, HR", "76730, MDR", "76751, RBB", 
+"76693, SWR", "76712, BR", "76682, 3sat", "76738, ONE", "76641, ARTE", "76649, PHOENIX", "76619, Eurosport", "76744, Eurosport 2", 
+"76773, 123.tv", "438460, 13th Street Universal", "76670, 3+", "76685, Adult Channel", "76735, Al Jazeera", "76759, Animal Planet", 
+"76745, ANIXE", "438466, ARD alpha", "76810, ATV", "76638, ATV II", "438446, Auto Motor Sport", "438468, AXN Black", 
+"438454, AXN White", "76650, BBC News", "76771, BBC World News", "76642, Beate-Uhse.TV", "76688, Bergblick", "76794, Bibel TV", 
+"76639, Bloomberg Europe TV", "438469, Bon Gusto", "500397, Cartoonito", "76763, Cartoon Network", "76723, Classica", "76647, CNBC", 
+"76797, CNN International", "76742, COMEDY CENTRAL", "76667, Crime + Investigation", "76646, Curiosity Channel", "76632, DAZN", 
+"451928, DAZN 1", "451927, DAZN 2", "76809, DELUXE MUSIC", "182674, DF1", "76686, Discovery HD", "76786, Disney Channel", 
+"76692, DMAX", "438455, DMF", "379181, DOKUSAT", "438462, euronews","76690, EXTREME SPORTS", "76775, Fashion TV", "438467, Fix & Foxi", 
+"76800, GEO Television", "76803, GoldStar TV", "76758, Gute Laune TV", "76701, Hamburg 1", "76675, Heimatkanal", 
+"438449, Home & Garden TV", "76661, HSE", "76737, HSE Extra", "76615, Jukebox", "76680, KiKA", "76770, KinoweltTV", "76805, K-TV", 
+"76710, Leipzig Fernsehen", "76713, LUST PUR", "76776, Marco Polo TV", "76765, More than Sports TV", "197537, Motorvision+", 
+"76630, Motorvision TV", "450290, MS Sport", "76780, MTV", "76666, münchen.tv", "76636, N24 Doku", "76628, Nat Geo HD", 
+"76783, NAT GEO WILD", "438439, nick", "76622, Nick Jr.", "76736, Nicktoons", "76694, NOW US", "438444, ntv","100304, oe24.TV", 
+"438442, ORF 1", "76616, ORF 2", "76734, ORF III", "76756, ORF SPORT +", "76660, Playboy TV", "575368, PULS 24", "76732, PULS 4", 
+"76808, PULS acht", "76697, QVC", "76618, QVC2", "76731, RiC", "535469, Rocket Beans TV", "76624, Romance TV", "76700, RTL Crime", 
+"76673, RTL Living", "76804, RTL Passion", "438450, Servus TV Österreich", "76631, Silverline", "76614, sixx","76781, sonnenklar.TV", 
+"76714, SPIEGEL Geschichte", "76659, SPORT1", "76754, SPORT1+", "450294, SportDigital1+", "438441, sportdigital Fussball", 
+"76784, SRF 1", "76772, SRF zwei", "76658, STAR TV", "76764, Syfy", "76696, tagesschau24","438452, The HISTORY Channel", 
+"76699, TLC", "76789, TOGGO plus", "562036, Top Serien", "568719, tv.berlin", "76726, UHD1", "76662, Universal Channel HD", 
+"76679, Warner TV Comedy", "76645, Warner TV Film", "76806, Warner TV Serie", "76795, WELT","438440, Welt der Wunder TV", 
+"76774, Sky Atlantic HD", "438458, Sky Cinema Action HD", "438459, Sky Cinema Classics HD", "438465, Sky Cinema Family HD", 
+"321554, Sky Cinema Highlights HD", "438461, Sky Cinema Premiere HD", "10908, Sky Crime", "10620, Sky Documentaries", 
+"76663, Sky Krimi", "10640, Sky Nature", "401732, Sky One", "562033, Sky Replay HD", "10918, Sky Showcase", "562035, Sky Showcase HD", 
+"401577, Sky Sport 1", "482486, Sky Sport 2", "456331, Sky Sport 3", "212838, Sky Sport 4", "212824, Sky Sport 5", 
+"480217, Sky Sport 6", "482693, Sky Sport 7", "453384, Sky Sport 8", "478720, Sky Sport 9", "559683, Sky Sport 10", 
+"438448, Sky Sport Austria", "452123, Sky Sport Austria 1 HD", "452126, Sky Sport Austria 2 HD", "452120, Sky Sport Austria 3 HD", 
+"452121, Sky Sport Austria 4 HD", "452122, Sky Sport Austria 5 HD", "452118, Sky Sport Austria 6 HD", "452125, Sky Sport Austria 7 HD", 
+"212821, Sky Sport Bundesliga", "561726, Sky Sport Bundesliga 1", "559320, Sky Sport Bundesliga 2", "558543, Sky Sport Bundesliga 3", 
+"558272, Sky Sport Bundesliga 4", "477005, Sky Sport Bundesliga 5", "446434, Sky Sport Bundesliga 6", "540526, Sky Sport Bundesliga 7", 
+"499802, Sky Sport Bundesliga 8", "473829, Sky Sport Bundesliga 9", "212817, Sky Sport Bundesliga 10", 
+"562034, Sky Sport Bundesliga UHD", "10781, SKY Sport F1", "10645, Sky Sport Golf", "10785, Sky Sport Mix", "76733, Sky Sport News", 
+"438445, Sky Sport Premier League", "10634, Sky Sport Tennis", "10675, Sky Sport Top Event", "452124, Sky Sport UHD", 
+"558979, Sport 1 - myTeamTV", "450501, Sport 2 - myTeamTV", "450500, Sport 3 - myTeamTV", "456147, Sport 4 - myTeamTV", 
+"450295, Sport 5 - myTeamTV", "513148, Sport 6 - myTeamTV", "450303, Sport 7 - myTeamTV", "450300, Sport 8 - myTeamTV", 
+"450502, Sport 9 - myTeamTV", "450302, Sport 10 - myTeamTV", "450306, Sport 11 - myTeamTV", "450299, Sport 12 - myTeamTV", 
+"482487, Sport 13 - myTeamTV", "455988, Sport 14 - myTeamTV", "462760, Sport 15 - myTeamTV", "491421, Sport 16 - myTeamTV", 
+"456554, Sport 17 - myTeamTV", "450292, Sport 18 - myTeamTV" ]
 
 ###############################################################################################################
 
@@ -202,7 +203,7 @@ else:
         Datum_Buttons[i].grid(row=1, column=i+2, padx=3, pady=4)
     # Sender-Liste
     Sender_VScroll = tk.Scrollbar(Master, width=14)
-    Sender_Liste = tk.Listbox(Master, width=28, height=33, selectborderwidth=2, yscrollcommand=Sender_VScroll.set)
+    Sender_Liste = tk.Listbox(Master, width=26, height=33, selectborderwidth=2, yscrollcommand=Sender_VScroll.set)
     Sender_Liste.config(foreground=Vordergrund, background=Hintergrund, font="Helvetica 11")
     Sender_VScroll.config(command=Sender_Liste.yview)
     Sender_Liste.pack(side="left", fill="both", padx=3, pady=3, expand=True)
@@ -210,7 +211,7 @@ else:
     # Info-Liste
     Info_VScroll = tk.Scrollbar(Master, width=14)
     Info_HScroll = tk.Scrollbar(Master, width=14, orient="horizontal")
-    Info_Liste = TT_Listbox(Master, width=54, height=31, selectborderwidth=2, yscrollcommand=Info_VScroll.set, xscrollcommand = Info_HScroll.set)
+    Info_Liste = TT_Listbox(Master, width=56, height=31, selectborderwidth=2, yscrollcommand=Info_VScroll.set, xscrollcommand = Info_HScroll.set)
     Info_Liste.config(foreground=Vordergrund, background=Hintergrund, font="Consolas 10")
     Info_VScroll.config(command=Info_Liste.yview)
     Info_HScroll.config(command=Info_Liste.xview)
