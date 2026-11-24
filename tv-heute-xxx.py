@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 #
-#  TV-Heute (iptv-xxx Version) - © 2026 by Woodstock
+#  TV-Heute-XXX - © 2026 by Woodstock
 #
 ###############################################################################################################
 
@@ -84,7 +84,6 @@ def Info_Anzeigen(event=None):
                 Start_neu = datetime.strptime(Start_str, "%Y%m%d %H%M") + timedelta(hours=-2)
                 Wochentag_idx = Start_neu.weekday()
 
-                #if len(Start) >= 8:    DatZeit = Start_neu.strftime("%a %d.%m. %H:%M")    # englisch
                 if len(Start) >= 8:    DatZeit = Wochentag[Wochentag_idx] + Start_neu.strftime(" %d.%m. %H:%M")
                 else:                  DatZeit = "Unbekannt   "
                 Info_Liste.insert("end", "  " + DatZeit + " - " + f"{Titel}")
@@ -154,7 +153,6 @@ Info_HScroll.pack(side="bottom", fill="x", padx=1, pady=1)
 Info_Liste.pack(side="left", fill="both", padx=2, pady=2, expand=True)
 Info_VScroll.pack(side="left", fill="y", padx=1, pady=1)
 
-#Sender_Laden("https://iptvx.one/EPG/epg.xml.gz")
 Sender_Laden("https://iptvx.one/EPG_LITE/epg_lite.xml.gz")
 
 Sender_Liste.delete(0, tk.END) 
